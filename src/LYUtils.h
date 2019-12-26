@@ -367,6 +367,8 @@ extern "C" {
 	LYNXEXEC_URL_TYPE,
 	LYNXPROG_URL_TYPE,
 
+	MAGNET_URL_TYPE,
+
 	NEWSPOST_URL_TYPE,
 	NEWSREPLY_URL_TYPE,
 	SNEWSPOST_URL_TYPE,
@@ -426,6 +428,10 @@ extern "C" {
 #define STR_HTTPS_URL        "https:"
 #define LEN_HTTPS_URL        6
 #define isHTTPS_URL(addr)    !strncasecomp(addr, STR_HTTPS_URL, LEN_HTTPS_URL)
+
+#define STR_MAGNET_URL       "magnet:"
+#define LEN_MAGNET_URL       7
+#define isMAGNET_URL(addr)   !strncasecomp(addr, STR_MAGNET_URL, LEN_MAGNET_URL)
 
 #define STR_MAILTO_URL       "mailto:"
 #define LEN_MAILTO_URL       7

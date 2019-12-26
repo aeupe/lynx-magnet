@@ -290,6 +290,19 @@ int getfile(DocInfo *doc, int *target)
 	    HTAlert(UNSUPPORTED_URL_SCHEME);
 	    return (NULLFILE);
 
+	} else if (url_type == MAGNET_URL_TYPE &&
+	    magnet_script != NULL) {
+	    char *magnet_cmd = NULL;
+	    HTSprintf0(&magnet_cmd,
+	      "%s \"%s\"",
+	      magnet_script,
+	      doc->address);
+	    if ( HTConfirm(LYElideString(magnet_cmd, 40)) ) {
+	      system(magnet_cmd);
+	    }
+	    FREE(magnet_cmd);
+	    return (NULLFILE);
+
 	} else if (url_type == DATA_URL_TYPE) {
 	    HTAlert(UNSUPPORTED_DATA_URL);
 	    return (NULLFILE);

@@ -461,6 +461,7 @@ char *lynx_temp_space = NULL;	/* The prefix for temporary file paths */
 char *lynxjumpfile = NULL;	/* the current jump file URL */
 char *lynxlinksfile = NULL;	/* the current visited links file URL */
 char *lynxlistfile = NULL;	/* the current list file URL */
+char *magnet_script = NULL;  /* the magnet script */
 char *original_dir = NULL;	/* the original directory */
 char *personal_extension_map = NULL;	/* .mime.types */
 char *personal_mail_address = NULL;	/* the user's mail address */

@@ -284,6 +284,7 @@ extern "C" {
     extern char *lynxjumpfile;
     extern char *lynxlinksfile;
     extern char *lynxlistfile;
+    extern char *magnet_script;
     extern char *original_dir;
     extern char *pref_charset;	/* Lynx's preferred character set - MM */
     extern char *startfile;

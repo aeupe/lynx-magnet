@@ -2454,6 +2454,8 @@ UrlTypes is_url(char *filename)
 	case 'm':
 	    if (CompareType(cp, STR_MAILTO_URL, LEN_MAILTO_URL)) {
 		result = MAILTO_URL_TYPE;
+	    } else if (CompareType(cp, STR_MAGNET_URL, LEN_MAGNET_URL)) {
+		result = MAGNET_URL_TYPE;
 	    }
 	    break;
 

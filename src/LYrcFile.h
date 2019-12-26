@@ -141,6 +141,7 @@
 #define RC_LYNXCGI_ENVIRONMENT          "lynxcgi_environment"
 #define RC_LYNX_HOST_NAME               "lynx_host_name"
 #define RC_LYNX_SIG_FILE                "lynx_sig_file"
+#define RC_MAGNET_SCRIPT                "magnet_script"
 #define RC_MAIL_ADRS                    "mail_adrs"
 #define RC_MAIL_SYSTEM_ERROR_LOGGING    "mail_system_error_logging"
 #define RC_MAKE_LINKS_FOR_ALL_IMAGES    "make_links_for_all_images"

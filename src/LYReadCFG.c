@@ -1779,6 +1779,7 @@ static Config_Type Config_Table [] =
      PARSE_SET(RC_XHTML_PARSING,        LYxhtml_parsing),
      PARSE_PRG(RC_ZCAT_PATH,            ppZCAT),
      PARSE_PRG(RC_ZIP_PATH,             ppZIP),
+     PARSE_STR(RC_MAGNET_SCRIPT,        magnet_script),
 
      PARSE_NIL
 };
