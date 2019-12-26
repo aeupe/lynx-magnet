@@ -298,7 +298,7 @@ int getfile(DocInfo *doc, int *target)
 	      magnet_script,
 	      doc->address);
 	    if ( HTConfirm(LYElideString(magnet_cmd, 40)) ) {
-	      system(magnet_cmd);
+	      LYSystem(magnet_cmd);
 	    }
 	    FREE(magnet_cmd);
 	    return (NULLFILE);
